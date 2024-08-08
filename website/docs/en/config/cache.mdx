@@ -1,5 +1,3 @@
-import PropertyType from '@components/property-type';
-
 # Cache
 
 Rspack will cache snapshots and intermediate products during the build process and use them in the next build to improve the speed of the build.
@@ -10,13 +8,8 @@ Rspack currently only supports memory cache, persistent cache is under planning,
 
 This configuration currently only supports setting whether to enable caching.
 
-<PropertyType
-  type="boolean"
-  defaultValueList={[
-    { defaultValue: 'false', mode: 'production' },
-    { defaultValue: 'true', mode: 'development' },
-  ]}
-/>
+- **Type:** `boolean`
+- **Default:** [production mode](config/mode#production) is `false`, [development mode](config/mode#development) is `true`
 
 ## Usage
 
